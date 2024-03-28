@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+@media (min-width: 960px) {
+  .area {
+    grid-template-areas:
+      "nome nome"
+      "email celular"
+      "mensagem mensagem"
+      "btn btn";
+  }
+
+  .area-nome {
+    grid-area: nome;
+  }
+
+  .area-email {
+    grid-area: email;
+    min-width: 537px;
+  }
+
+  .area-celular {
+    grid-area: celular;
+    min-width: 382px;
+    margin-left: 8px;
+  }
+
+  .area-mensagem {
+    grid-area: mensagem;
+  }
+
+  .area-btn {
+    grid-area: btn;
+    justify-self: end;
+  }
+}
