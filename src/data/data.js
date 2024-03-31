@@ -62,7 +62,7 @@ export const posts = [
           p: "Então quando o React chama um componente (<Componente />) chamamos isso de instanciar. O interessante é que cada uma dessas chamadas de componente (instâncias) possue seu próprio estado - state e lifecycle - effect. Toda vez que um componente é renderizado, uma nova instância desse componente é criada.",
         },
         {
-          p: " ",
+          p: "Mil maravilhas né? e é isso mesmo. Componente vicia..mas tome cuidado para não componentizar tudo. No começo pode ser dificil de entender, mas não desista essa abstração é linda e irá te ajudar muito. ",
         },
       ],
       image:

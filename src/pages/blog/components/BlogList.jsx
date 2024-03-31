@@ -5,7 +5,7 @@ export function BlogList({ posts }) {
     return null;
   }
   return (
-    <section className=" bg-neutral-100 p-4">
+    <section className=" bg-neutral-100 p-4 dark:bg-stone-300 ">
       <ul className="mx-auto my-8 grid  max-w-5xl grid-cols-1 gap-4  sm:grid-cols-2 md:grid-cols-3 ">
         {posts.length > 0 ? (
           posts.map(({ ...props }, index) => (

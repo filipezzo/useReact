@@ -40,7 +40,7 @@ export function Banner() {
     textAlign: "center",
   };
   return (
-    <section id="sobre">
+    <section id="sobre" className="border-b border-t">
       <div style={inlineStyle}>
         <h2 style={headingStyle}>Onde aprender React? 🤔</h2>
         <Link

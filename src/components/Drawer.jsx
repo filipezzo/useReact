@@ -169,7 +169,10 @@ export function Drawer({ onClosingDrawer }) {
   }, [handleClose]);
 
   return (
-    <Container ref={ref}>
+    <Container
+      ref={ref}
+      className="bg-neutral-300 text-black dark:bg-stone-950  dark:text-white"
+    >
       <nav>
         <List>
           {route.map(({ id, icon, content, to }) => (

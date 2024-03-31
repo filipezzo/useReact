@@ -5,7 +5,7 @@ import { Footer } from "../components/Footer";
 
 export function Layout({ children }) {
   return (
-    <div className="  bg-neutral-100">
+    <div className="h-full  bg-neutral-100">
       <Header />
       <main>{children}</main>
       <Footer />

@@ -6,6 +6,7 @@ import "./index.css";
 import { BlogPage } from "./pages/blog/BlogPage";
 import { ErrorPage } from "./pages/ErrorPage";
 import { DetailsPage } from "./pages/details/DetailsPage";
+import { ThemeProvider } from "./contexts/theme";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +27,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>,
 );

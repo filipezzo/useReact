@@ -1,7 +1,7 @@
 import { Logo } from "../../../components/Logo";
 export function Description() {
   return (
-    <section className="bg-sky-900">
+    <section className="bg-sky-600 dark:bg-stone-950 ">
       <div className="mx-auto flex max-w-3xl flex-col items-center  justify-center  px-4 py-32">
         <h2 className="mb-8 text-4xl font-bold sm:text-5xl ">Porquê React?</h2>
         <DescCard text=" O React é altamente performático. Ele utiliza uma árvore UI para comparar com o DOM real e realiza alterações apenas quando necessário, o que melhora significativamente o desempenho da aplicação. Lembre-se que modificar o DOM diretamente custa caro 💵" />
@@ -18,7 +18,7 @@ export function Description() {
 const DescCard = ({ order = false, text }) => {
   return (
     <div className="mb-16 flex w-full items-center gap-4 ">
-      <Logo />
+      <Logo className="dark:text-white" />
       <p
         className={`${order && "order-first"} sm:w-[430px] sm:flex-1 sm:leading-7`}
       >

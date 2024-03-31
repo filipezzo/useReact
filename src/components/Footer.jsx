@@ -54,7 +54,9 @@ export function Footer() {
     route = footerBlogNav;
   }
   return (
-    <footer className="h-12 w-full appearance-none gap-4 bg-sky-500 text-neutral-100">
+    <footer
+      className={` absolute left-0 mt-auto h-12 w-full appearance-none gap-4 bg-sky-500 text-neutral-100  dark:bg-stone-900/40  ${isHome ? "bottom-14 md:bottom-0" : "bottom-0"}`}
+    >
       <nav className="flex h-full w-full items-center gap-4  p-4">
         <div className="flex w-full max-w-2xl items-center gap-4   whitespace-nowrap">
           {route.map(({ id, title, to }) => (

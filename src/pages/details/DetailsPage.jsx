@@ -19,20 +19,20 @@ export function DetailsPage() {
 
   return (
     <Layout>
-      <section className=" px-2 sm:px-6">
+      <section className=" p-8 px-2 text-neutral-600 sm:px-6 dark:bg-stone-950 dark:text-white">
         {filteredSelectedPost.map(
           ({ id, content: { title, paragraphs, image } }) => (
             <div
               key={id}
-              className="mx-auto mb-10  flex w-[900px] max-w-full flex-col gap-6 leading-[1.15]"
+              className="mx-auto   flex w-[900px] max-w-full flex-col gap-6 leading-[1.15]"
             >
-              <h1 className="pt-12 text-center text-[clamp(1.5rem,6vw,4.1rem)] font-bold text-black  ">
+              <h1 className="pt-12 text-center text-[clamp(1.5rem,6vw,4.1rem)] font-bold text-black dark:text-sky-500  ">
                 {title}
               </h1>
               <div>
                 {paragraphs.map((p, index) => (
                   <p
-                    className="mx-auto my-4 max-w-[700px] px-1 text-sm font-medium text-neutral-600 md:text-base"
+                    className="mx-auto my-4 max-w-[700px] px-1 text-sm font-medium  md:text-base"
                     key={index}
                   >
                     {p.p}
@@ -47,7 +47,7 @@ export function DetailsPage() {
               )}
 
               <img
-                className="mx-auto h-full max-h-[300px] w-full max-w-[700px] rounded-md object-cover "
+                className="mx-auto h-full max-h-[300px] w-full max-w-[700px] rounded-md object-cover pb-8 "
                 src={image}
                 loading="lazy"
                 alt={`imagem sobre conteudo do ${title}`}

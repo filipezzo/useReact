@@ -40,7 +40,7 @@ export function Contact() {
   };
   return (
     <section id="contato">
-      <div className="w-full px-4 py-32">
+      <div className="w-full px-4 py-32 dark:bg-stone-950 ">
         <h2 className="mb-2 text-center text-2xl text-sky-500 sm:text-5xl">
           Entre em Contato
         </h2>
