@@ -7,7 +7,7 @@ export function HeroBlog({ onChangeValue }) {
 
   return (
     <div
-      className={`bg-react-bg flex h-80 w-full flex-col items-center justify-center gap-4 bg-cover bg-center bg-no-repeat p-4  `}
+      className={`flex h-80 w-full flex-col items-center justify-center gap-4 bg-react-bg bg-cover bg-center bg-no-repeat p-4 dark:bg-stone-950 dark:text-white  `}
     >
       <Input
         onChange={handleChange}

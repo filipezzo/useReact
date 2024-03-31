@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "react-bg": "url(/src/assets/og-home.png)",
+        "react-bg": "url(/src/assets/react.png)",
       },
     },
   },
