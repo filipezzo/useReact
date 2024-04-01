@@ -1,9 +1,9 @@
-import { Layout } from "../../layout/Layout";
-import { HeroBlog } from "./components/HeroBlog";
-import { BlogList } from "./components/BlogList";
-import { posts } from "../../data/data";
 import { useEffect, useState } from "react";
+import { posts } from "../../data/data";
 import { useDebounce } from "../../hooks/useDebounce";
+import { Layout } from "../../layout/Layout";
+import { BlogList } from "./components/BlogList";
+import { HeroBlog } from "./components/HeroBlog";
 export function BlogPage() {
   const [searchValue, setSearchValue] = useState("");
   const delayValue = useDebounce(searchValue, 300);

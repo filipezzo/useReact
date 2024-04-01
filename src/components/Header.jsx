@@ -1,9 +1,9 @@
 import { Atom, Menu, Moon, Sun } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Drawer } from "./Drawer";
-import { Backdrop } from "./Backdrop";
 import { useTheme } from "../contexts/theme";
+import { Backdrop } from "./Backdrop";
+import { Drawer } from "./Drawer";
 
 export function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -13,7 +13,7 @@ export function Header() {
 
   const handleClosingDrawer = () => setIsDrawerOpen(false);
   return (
-    <header className="sticky left-auto right-0 top-0 z-50 flex  min-h-14 w-full   items-center  bg-white px-4 text-white shadow-md lg:min-h-16 lg:px-6 dark:bg-stone-950 ">
+    <header className="sticky left-auto right-0 top-0 z-50 flex  min-h-14 w-full   items-center  bg-white px-4 text-white shadow-md dark:bg-stone-950 lg:min-h-16 lg:px-6 ">
       <Link to="/" className="mr-12 flex items-center gap-3">
         <Atom className="h-9 w-9 text-sky-500 dark:text-white" />
         <span className="text-base text-sky-500 dark:text-white">

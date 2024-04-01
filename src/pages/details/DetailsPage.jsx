@@ -1,7 +1,7 @@
-import { useNavigate, useParams } from "react-router-dom";
-import { Layout } from "../../layout/Layout";
-import { posts } from "../../data/data";
 import { useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { posts } from "../../data/data";
+import { Layout } from "../../layout/Layout";
 
 export function DetailsPage() {
   const { id } = useParams();
@@ -19,7 +19,7 @@ export function DetailsPage() {
 
   return (
     <Layout>
-      <section className=" p-8 px-2 text-neutral-600 sm:px-6 dark:bg-stone-950 dark:text-white">
+      <section className=" p-8 px-2 text-neutral-600 dark:bg-stone-950 dark:text-white sm:px-6">
         {filteredSelectedPost.map(
           ({ id, content: { title, paragraphs, image } }) => (
             <div

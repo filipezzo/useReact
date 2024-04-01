@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export function MobileNav() {
   return (
-    <div className="sticky bottom-0 z-10  flex h-14 w-full max-w-full content-center items-center justify-center bg-neutral-100 sm:hidden dark:bg-stone-950  ">
+    <div className="sticky bottom-0 z-10  flex h-14 w-full max-w-full content-center items-center justify-center bg-neutral-100 dark:bg-stone-950 sm:hidden  ">
       <MobileNavItem to="/blog" icon={<Wifi size={24} />} text="Blog" />
       <MobileNavItem to="/" icon={<Home size={24} />} text="Home" />
       <MobileNavItem

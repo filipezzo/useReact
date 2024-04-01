@@ -1,15 +1,15 @@
-import { useCallback, useEffect, useRef } from "react";
-import styled, { keyframes } from "styled-components";
 import {
-  Home,
-  Wifi,
-  Mail,
-  SearchX,
   Atom,
   Github,
+  Home,
   Linkedin,
+  Mail,
+  SearchX,
+  Wifi,
 } from "lucide-react";
+import { useCallback, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
+import styled, { keyframes } from "styled-components";
 
 const HomeMenu = [
   {

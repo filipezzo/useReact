@@ -112,7 +112,7 @@ export const posts = [
         },
 
         {
-          p: "Por fim, o state não é apenas mais uma ferramenta, mas sim o coração de todo o processo. Quando dominamos o uso do state, estamos no controle. Considere este post como uma breve introdução, pois o mundo do state(estado) é vasto e você precisa explorá-lo.",
+          p: "Por fim, o state não é apenas mais uma ferramenta, mas sim o coração de todo o processo. Quando dominamos o uso do state, estamos no controle. Considere este post como uma breve introdução, pois o mundo do state(estado) é vasto e você precisa explorá-lo. Fica uma dica 👀 state management, custom hooks/states",
         },
       ],
       image:
